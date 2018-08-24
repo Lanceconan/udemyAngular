@@ -1,5 +1,29 @@
-<app-cabecera></app-cabecera>
+<h1 class="container bg-dark text-white text-center my-4 py-4">ngIf show = {{ show }}</h1>
+<div class="container">
+    
+    <button class="btn btn-warning" (click) = "show=!show">Acción</button>
+
+    <p class="text-info" *ngIf="show; else showDos">       
+       Texto info
+    </p>
+
+    <ng-template #showDos>
+        <p class="text-danger"> 
+            Texto Danger
+            <input type="text" name="valor">
+        </p>
+    </ng-template>
+
+    <div class="text-danger">
+        <p class="text-danger"> 
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, facilis saepe recusandae deserunt exercitationem culpa ipsam hic neque molestiae amet animi odit ea impedit aperiam, voluptas pariatur eveniet fugit laborum?
+        </p>
+    </div>
+
+    <input type="checkbox" (click) = "texto=!texto" selected> 
+    <p class="text-body" *ngIf = "texto">       
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla voluptas quisquam inventore tempora provident dolorem facilis repellendus aliquid, excepturi officiis id, praesentium aut quae quibusdam dolores, unde voluptatem animi dolorum?        
+    </p>
 
 
-
-<app-footer></app-footer>
+</div>

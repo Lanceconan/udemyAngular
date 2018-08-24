@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title:string = 'Amor a Angular';
+  show:boolean = true;
+  texto:boolean = true;
 }
