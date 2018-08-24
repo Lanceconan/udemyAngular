@@ -27,3 +27,21 @@
 
 
 </div>
+
+
+<h1 class="container bg-dark text-white text-center my-4 py-4">[ngClass]</h1>
+<div class="container">
+    
+    <button class="btn btn-dark mb-3" (click) = "activo = 'primero'"> Primero </button>
+    <button class="btn btn-danger mb-3" (click) = "activo = 'segundo'"> Segundo </button>
+
+    <p class="text-info d-none" [ngClass]="{ 'd-block': activo == 'primero' }">       
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aperiam commodi dignissimos delectus, numquam sit nobis eligendi reiciendis, consectetur error, placeat explicabo repudiandae suscipit? Dolores sunt sed praesentium quos laudantium.
+    </p>
+
+    <p class="text-danger d-none" [ngClass]="{ 'd-block': activo == 'segundo' }">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus temporibus nam nobis dignissimos corporis, ipsa tempora vitae quia dolor iusto ab veritatis iure provident laboriosam dicta et odio error impedit.
+    </p>
+
+
+</div>
