@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   show:boolean = true;
   texto:boolean = true;
+  cursos:string[] = ['HTML', 'ANGULAR', 'PHP'];
+
 }
