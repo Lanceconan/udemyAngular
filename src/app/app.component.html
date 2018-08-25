@@ -20,7 +20,7 @@
         </p>
     </div>
 
-    <input type="checkbox" (click) = "texto=!texto" selected> 
+    <input type="checkbox" (selected) = "texto=!texto" selected> 
     <p class="text-body" *ngIf = "texto">       
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla voluptas quisquam inventore tempora provident dolorem facilis repellendus aliquid, excepturi officiis id, praesentium aut quae quibusdam dolores, unde voluptatem animi dolorum?        
     </p>
@@ -46,20 +46,8 @@
 
 </div>
 
-
-<h1 class="container bg-dark text-white text-center my-4 py-4">[ngFor]</h1>
+<h1 class="container bg-dark text-white text-center my-4 py-4">[ngModel]</h1>
 <div class="container">
-    <h2 class="container bg-info text-black text-center my-3 py-3">Una lista cargada con ngFor</h2>
-    
-    <ul>
-        <li *ngFor = "let curso of cursos"> {{ curso }} </li>
-    </ul>
-
-    <h2 class="container bg-info text-black text-center my-3 py-3">Un combo box cargado con ngFor</h2>
-
-    <select name="pais">
-        <option *ngFor= "let pais of paises" [value] = "pais"> {{ pais }}</option>
-    </select>
 
     <h2 class="container bg-info text-black text-center my-3 py-3">Un radio button cargado con ngFor</h2>
 
@@ -74,6 +62,21 @@
     <label for="genero" *ngFor="let estilo of estilos">
             <input name="estilo" [value]="estilo" ngModel type="checkbox"> {{ estilo }} <br>
     </label>
+
+</div>
+<h1 class="container bg-dark text-white text-center my-4 py-4">[ngFor]</h1>
+<div class="container">
+    <h2 class="container bg-info text-black text-center my-3 py-3">Una lista cargada con ngFor</h2>
+    
+    <ul>
+        <li *ngFor = "let curso of cursos"> {{ curso }} </li>
+    </ul>
+
+    <h2 class="container bg-info text-black text-center my-3 py-3">Un combo box cargado con ngFor</h2>
+
+    <select name="pais">
+        <option *ngFor= "let pais of paises" [value] = "pais"> {{ pais }}</option>
+    </select>    
    
     <br><br>
 
