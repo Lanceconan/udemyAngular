@@ -49,7 +49,7 @@
 <h1 class="container bg-dark text-white text-center my-4 py-4">[ngModel]</h1>
 <div class="container">
 
-    <h2 class="container bg-info text-black text-center my-3 py-3">Un radio button cargado con ngFor</h2>
+    <h2 class="container bg-info text-black text-center my-3 py-3">Un radio button cargado con ngModel</h2>
 
     <label for="genero" *ngFor="let genero of generos">
         <input name="genero" [value]="genero" ngModel type="radio"> {{ genero }} <br>
@@ -57,7 +57,7 @@
     
     <br><br>
 
-    <h2 class="container bg-info text-black text-center my-3 py-3">Un checkbox cargado con ngFor</h2>
+    <h2 class="container bg-info text-black text-center my-3 py-3">Un checkbox cargado con ngModel</h2>
     
     <label for="genero" *ngFor="let estilo of estilos">
             <input name="estilo" [value]="estilo" ngModel type="checkbox"> {{ estilo }} <br>
